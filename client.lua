@@ -725,8 +725,10 @@ Citizen.CreateThread(function()
         local sleep = 1000
         local player = PlayerPedId()
         if IsEntityDead(player) or not DoesEntityExist(player) then
+		if isProcessing then
             exports['mythic_notify']:SendAlert("error", "Öldüğün için tüm mal heba oldu..")
             TriggerEvent("kaves_meth:break", false)
+		end
         end
         Citizen.Wait(sleep)
     end
