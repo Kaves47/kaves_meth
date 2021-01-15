@@ -24,7 +24,7 @@ THIS SCRIPT WAS WRITTEN BY Kaves#0359
 -- StageOne //
 Citizen.CreateThread(function()
     while true do
-        Citizen.Wait(0) 
+       -- Citizen.Wait(0) 
         local sleep = 1000
         local playerPed = GetEntityCoords(PlayerPedId())
         local player = PlayerPedId()
@@ -53,7 +53,7 @@ end)
 -- StageTwo //
 Citizen.CreateThread(function()
     while true do
-        Citizen.Wait(0) 
+     --   Citizen.Wait(0) 
         local sleep = 1000
         local playerPed = GetEntityCoords(PlayerPedId())
         local player = PlayerPedId()
@@ -83,7 +83,7 @@ end)
 -- StageThree //
 Citizen.CreateThread(function()
     while true do
-        Citizen.Wait(1) 
+      --  Citizen.Wait(1) 
         local sleep = 1000
         local playerPed = GetEntityCoords(PlayerPedId())
         local player = PlayerPedId()
@@ -122,7 +122,7 @@ end)
 -- stageFour //
 Citizen.CreateThread(function()
     while true do
-        Citizen.Wait(0) 
+     --   Citizen.Wait(0) 
         local sleep = 1000
         local playerPed = GetEntityCoords(PlayerPedId())
         local player = PlayerPedId()
@@ -721,7 +721,7 @@ end)
 
 Citizen.CreateThread(function()
     while true do
-        Citizen.Wait(1) 
+       -- Citizen.Wait(1) 
         local sleep = 1000
         local player = PlayerPedId()
         if IsEntityDead(player) or not DoesEntityExist(player) then
@@ -745,7 +745,7 @@ RegisterNetEvent("kaves_meth:gasiscoming")
 AddEventHandler("kaves_meth:gasiscoming", function(startGas)
     while true do   
         inGas = startGas
-        Citizen.Wait(1)
+       -- Citizen.Wait(1)
         local sleep = 1000
         local gasCenter = vector3(1393.36,3606.99,38.94)
         local player = PlayerPedId()
