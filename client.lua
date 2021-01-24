@@ -706,12 +706,16 @@ RegisterNetEvent("kaves_meth:succes")
 AddEventHandler("kaves_meth:succes", function()
     if sayac == 0 then
         TriggerServerEvent("kaves_meth:giveItem", "meth", 6)
+		sayac = 0
     elseif sayac == 1 then
         TriggerServerEvent("kaves_meth:giveItem", "meth", 4)
+		sayac = 0
     elseif sayac == 2 then
         TriggerServerEvent("kaves_meth:giveItem", "meth", 2)
+		sayac = 0
     elseif sayac == 3 then
         exports['mythic_notify']:SendAlert("error", "Malzeme kalitesi berbat gözüküyor bu mal para etmez..")
+		sayac = 0
     end
 end)
 
